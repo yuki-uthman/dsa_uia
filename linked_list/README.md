@@ -28,4 +28,5 @@ To run the app execute:
 
 To run the test execute:
 
-    $ python -m pytest tests/
+    $ python -m pytest test/
+
