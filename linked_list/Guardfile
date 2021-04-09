@@ -1,0 +1,4 @@
+guard :pytest, pytest_option: "--doctest-modules --color=yes" do
+  watch(%r{^((?!test/).*)\.py$})  {|m| "test/#{m[1]}_test.py" }
+  watch(%r{^test/.*_test\.py$})
+end
